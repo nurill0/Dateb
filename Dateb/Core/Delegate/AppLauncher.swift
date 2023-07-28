@@ -1,6 +1,4 @@
 //
-//  AppLauncher.swift
-//  Plant-disease
 //
 //  Created by Nurillo Domlajonov on 17/10/22.
 //
@@ -11,7 +9,6 @@ import UIKit
 
 final class AppLauncher{
     
-    let userDefaultsManager = UserDefaultsManager.shared
     private(set) var window: UIWindow
     
     @available(iOS 13.0, *)
@@ -36,7 +33,7 @@ final class AppLauncher{
     }
     
     func showMainPage() {
-        let navCtrl = createNavCtrl(rootVC: SignInController())
+        let navCtrl = createNavCtrl(rootVC: LaunchVC())
         window.rootViewController = navCtrl
         window.makeKeyAndVisible()
     }

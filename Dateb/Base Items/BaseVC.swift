@@ -12,7 +12,6 @@ class BaseVC: UIViewController {
     lazy var baseContainerV: UIView = {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.backgroundColor = .baseColor()
         
         return view
     }()
@@ -55,7 +54,7 @@ extension BaseVC {
     
     
     fileprivate func configureUI(){
-        view.backgroundColor = .baseColor()
+        view.backgroundColor = .white
         baseContainerVConst()
     }
     

@@ -1,12 +1,3 @@
-//
-//  UIColorextension.swift
-//  Ish Bor
-//
-//  Created by Nurillo Domlajonov on 08/02/23.
-//
-
-import Foundation
-//
 //  UIColorExtension.swift
 //  Tasbeh
 //
@@ -15,12 +6,11 @@ import Foundation
 import UIKit
 
 
-
 // new business app design releted colors
 extension UIColor {
     // general
     static func baseColor()->UIColor{
-        return UIColor(hexString: "EEEEEE")
+        return UIColor(hexString: "5FA160")
     }
     
 
@@ -37,7 +27,7 @@ extension UIColor {
     }
     
     static func titleModeColors()->UIColor {
-        return UIColor(named: "TitleColors")!
+        return .black
     }
     
     

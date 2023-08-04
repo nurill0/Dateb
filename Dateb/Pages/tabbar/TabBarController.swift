@@ -73,7 +73,7 @@ public class TabBarViewController: UITabBarController {
         
         
         let homeVC = HomeVC()
-        homeVC.title = "Home"
+        homeVC.title = "Category"
         homeVC.tabBarItem.title = ""
         homeVC.tabBarItem.image = UIImage(named: "aa", in: Bundle(for: TabBarViewController.self), compatibleWith: nil)?.withRenderingMode(.alwaysOriginal)
         

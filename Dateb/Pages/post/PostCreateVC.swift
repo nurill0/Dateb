@@ -35,8 +35,8 @@ class PostCreateVC: BaseVC {
         
         return collectionView
     }()
-
-
+    
+    
 }
 
 
@@ -48,7 +48,8 @@ extension PostCreateVC {
         super.viewWillAppear(animated)
         tabBarController?.navigationItem.hidesBackButton = true
         tabBarController?.navigationItem.title = "Post"
-
+        tabBarController?.navigationItem.searchController = nil
+        
     }
     
     override func viewDidLoad() {

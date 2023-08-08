@@ -22,7 +22,7 @@ class HomeVC: BaseVC {
         collectionView.register(CategoryCell.self, forCellWithReuseIdentifier: CategoryCell.identifer)
         collectionView.register(CategooryHeaderView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: CategooryHeaderView.identifier)
         collectionView.backgroundColor = #colorLiteral(red: 0.9333333373, green: 0.9333333373, blue: 0.9333333373, alpha: 1)
-
+        
         
         return collectionView
     }()
@@ -39,6 +39,10 @@ extension HomeVC {
         super.viewWillAppear(animated)
         tabBarController?.navigationItem.hidesBackButton = true
         tabBarController?.navigationItem.title = "Category"
+        let searchController = UISearchController(searchResultsController: nil)
+        tabBarController?.navigationItem.searchController = searchController
+        tabBarController?.navigationItem.hidesSearchBarWhenScrolling = true
+        definesPresentationContext = true
         searchBarConst()
     }
     
@@ -103,14 +107,13 @@ extension HomeVC {
     fileprivate func configureUI(){
         baseContainerV.backgroundColor = #colorLiteral(red: 0.9333333373, green: 0.9333333373, blue: 0.9333333373, alpha: 1)
         view.backgroundColor  = #colorLiteral(red: 0.9333333373, green: 0.9333333373, blue: 0.9333333373, alpha: 1)
-        searchBarConst()
         collectionViewConst()
     }
-   
+    
     fileprivate func searchBarConst(){
         let searchController = UISearchController(searchResultsController: nil)
         self.tabBarController?.navigationItem.searchController = searchController
-        self.tabBarController?.navigationItem.hidesSearchBarWhenScrolling = false
+        self.tabBarController?.navigationItem.hidesSearchBarWhenScrolling = true
         definesPresentationContext = true
         searchController.hidesNavigationBarDuringPresentation = false
         let textField = searchController.searchBar.searchTextField

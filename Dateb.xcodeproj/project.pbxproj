@@ -32,6 +32,8 @@
 		FBC0459D2A666C7500FF2F6C /* Dateb.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FBC0459B2A666C7500FF2F6C /* Dateb.xcdatamodeld */; };
 		FBC0459F2A666C7800FF2F6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBC0459E2A666C7800FF2F6C /* Assets.xcassets */; };
 		FBC045A22A666C7800FF2F6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBC045A02A666C7800FF2F6C /* LaunchScreen.storyboard */; };
+		FBD75EBD2A7EBBC800257B4A /* FavouriteProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD75EBC2A7EBBC700257B4A /* FavouriteProductCell.swift */; };
+		FBD75EC12A7EBC4400257B4A /* ChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD75EC02A7EBC4400257B4A /* ChatCell.swift */; };
 		FBF3E0FF2A79822B00A888D3 /* CategooryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF3E0FE2A79822B00A888D3 /* CategooryHeaderView.swift */; };
 		FBF3E1012A79835000A888D3 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF3E1002A79835000A888D3 /* CategoryCell.swift */; };
 /* End PBXBuildFile section */
@@ -64,6 +66,8 @@
 		FBC0459E2A666C7800FF2F6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FBC045A12A666C7800FF2F6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FBC045A32A666C7800FF2F6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBD75EBC2A7EBBC700257B4A /* FavouriteProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteProductCell.swift; sourceTree = "<group>"; };
+		FBD75EC02A7EBC4400257B4A /* ChatCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatCell.swift; sourceTree = "<group>"; };
 		FBF3E0FE2A79822B00A888D3 /* CategooryHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategooryHeaderView.swift; sourceTree = "<group>"; };
 		FBF3E1002A79835000A888D3 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -142,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				FBB62A002A6697E60098DB80 /* ChatVC.swift */,
+				FBD75EBF2A7EBC3700257B4A /* chatCell */,
 			);
 			path = chat;
 			sourceTree = "<group>";
@@ -150,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				FBB62A032A66983C0098DB80 /* FavouriteVC.swift */,
+				FBD75EBE2A7EBC0E00257B4A /* favouriteproductcell */,
 			);
 			path = favourite;
 			sourceTree = "<group>";
@@ -249,6 +255,22 @@
 			path = Delegate;
 			sourceTree = "<group>";
 		};
+		FBD75EBE2A7EBC0E00257B4A /* favouriteproductcell */ = {
+			isa = PBXGroup;
+			children = (
+				FBD75EBC2A7EBBC700257B4A /* FavouriteProductCell.swift */,
+			);
+			path = favouriteproductcell;
+			sourceTree = "<group>";
+		};
+		FBD75EBF2A7EBC3700257B4A /* chatCell */ = {
+			isa = PBXGroup;
+			children = (
+				FBD75EC02A7EBC4400257B4A /* ChatCell.swift */,
+			);
+			path = chatCell;
+			sourceTree = "<group>";
+		};
 		FBF3E0FC2A7981FC00A888D3 /* cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -343,6 +365,7 @@
 				FBF3E0FF2A79822B00A888D3 /* CategooryHeaderView.swift in Sources */,
 				FB0394F62A73E6E8002E8E61 /* CreatePostCell.swift in Sources */,
 				FBB629EB2A667B460098DB80 /* UIViewExtension.swift in Sources */,
+				FBD75EBD2A7EBBC800257B4A /* FavouriteProductCell.swift in Sources */,
 				FBB629F72A6696BB0098DB80 /* HomeVC.swift in Sources */,
 				FBC045972A666C7500FF2F6C /* LaunchVC.swift in Sources */,
 				FBB629E52A667A480098DB80 /* AppLauncher.swift in Sources */,
@@ -359,6 +382,7 @@
 				FBB629ED2A667B4F0098DB80 /* UserdefaultsManager.swift in Sources */,
 				FBB62A092A66A79C0098DB80 /* CustomTabbar.swift in Sources */,
 				FBB629E32A667A390098DB80 /* GlobalAccessables.swift in Sources */,
+				FBD75EC12A7EBC4400257B4A /* ChatCell.swift in Sources */,
 				FBB629E12A667A2F0098DB80 /* BaseNavCtrl.swift in Sources */,
 				FBB629E72A667A540098DB80 /* Constants.swift in Sources */,
 			);

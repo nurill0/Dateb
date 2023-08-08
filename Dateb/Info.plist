@@ -2,6 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSLocationUsageDescription</key>
+	<string>Plase allow use your location for find your adress</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Plase allow use your location for find your adress</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Plase allow use your location for find your adress</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
